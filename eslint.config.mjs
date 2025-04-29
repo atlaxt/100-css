@@ -16,9 +16,10 @@ const eslintConfig = [
       'no-console': 'warn',
       'react/jsx-no-undef': 'error',
       'react/react-in-jsx-scope': 'off',
-
-      // Stil ve boşluk kuralları
+    
       'indent': ['error', 2],
+      'react/jsx-indent': ['error', 2],
+      'react/jsx-indent-props': ['error', 2],
       'semi': ['error', 'never'],
       'quotes': ['error', 'single'],
       'comma-spacing': ['error', { before: false, after: true }],
@@ -27,10 +28,9 @@ const eslintConfig = [
       'no-multiple-empty-lines': ['error', { max: 1 }],
       'eol-last': ['error', 'always'],
       
-      // Değişkenler
       'no-unused-vars': ['error', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
-      'camelcase': ['warn', { properties: 'always' }],
-    },
+    }
+    
   },
 ]
 
