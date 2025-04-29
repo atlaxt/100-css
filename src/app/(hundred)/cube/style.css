@@ -73,8 +73,3 @@
 .cube-bottom {
   transform: rotateX(270deg) translateZ(100px);
 }
-
-.buttons {
-  width: 18px;
-  height: 18px;
-}

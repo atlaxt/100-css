@@ -1,0 +1,22 @@
+.wrapper {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.bar {
+  position: absolute;
+  width: 40px;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  bottom: 0;
+  transform-origin: bottom;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0%   { transform: scaleY(0.4); }
+  50%  { transform: scaleY(1); }
+  100% { transform: scaleY(0.4); }
+}

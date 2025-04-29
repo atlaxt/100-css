@@ -28,3 +28,8 @@ body {
 .text-hover {
   @apply hover:text-zinc-300 duration-300
 }
+
+.buttons {
+  width: 22px;
+  height: 22px;
+}

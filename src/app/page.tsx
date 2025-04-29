@@ -18,6 +18,13 @@ export default function Home() {
         >
           2. rain
         </Link>
+
+        <Link
+          className="opacity-70 hover:opacity-100 transition-all duration-200 ease-in-out text-sm"
+          href={'/equalizer'}
+        >
+          3. equalizer
+        </Link>
       </div>
     </div>
   )
