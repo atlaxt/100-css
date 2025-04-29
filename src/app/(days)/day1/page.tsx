@@ -1,9 +1,7 @@
-
 export default function day1() {
-
   return (
     <div>
-      day 1
+      <p className="text-white">Day 1</p>
     </div>
   )
 }
