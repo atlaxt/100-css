@@ -15,10 +15,10 @@ export default function Equalizer() {
   const [bars, setBars] = useState<Bar[]>([])
 
   useEffect(() => {
-    const temp: Bar[] = Array.from({ length: 10 }).map((_, i) => ({
-      height: `${Math.random() * violence * 20 + 50}%`,
+    const temp: Bar[] = Array.from({ length: 20 }).map((_, i) => ({
+      height: `${Math.random() * violence * (20 * i / 10) + 5}%`,
       animationDuration: `${1 / violence}s`,
-      left: `${i * 40}px`
+      left: `${i * 5}px`
     }))
     setBars(temp)
   }, [violence])
@@ -43,8 +43,8 @@ export default function Equalizer() {
             className="bar"
             style={{
               height: bar.height,
-              animationDuration: `${(1 / violence) + Math.random() * 0.3}s`,
-              left: `${(i / 10) * 100}%`
+              animationDuration: `${(1 / violence) + Math.random() * (0.3)}s`,
+              left: `${(i * 40)}px`
             }}
           ></div>
         ))}
