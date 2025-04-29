@@ -1,3 +1,10 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
 .scene {
   perspective: 900px;
   user-select: none;
@@ -9,6 +16,14 @@
 
   transform-style: preserve-3d;
   animation: spin 8s linear infinite;
+}
+
+.cube.paused {
+  animation-play-state: paused;
+}
+
+.cube.running {
+  animation-play-state: running;
 }
 
 @keyframes spin {
@@ -29,7 +44,7 @@
   position: absolute;
   width: 200px;
   height: 200px;
-  border: 0.1px solid white;
+  border: 1px solid white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,4 +72,9 @@
 
 .cube-bottom {
   transform: rotateX(270deg) translateZ(100px);
+}
+
+.buttons {
+  width: 18px;
+  height: 18px;
 }
