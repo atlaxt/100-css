@@ -6,12 +6,10 @@
 
 .bar {
   position: absolute;
-  width: 24px;
+  width: 22px;
   border-top: 1px solid white;
   border-left: 1px solid white;
   border-right: 1px solid white;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
   bottom: 0;
   transform-origin: bottom;
   animation: pulse 1s infinite;
