@@ -5,4 +5,5 @@ export const LinkContext = createContext<string[]>([
   'rain',
   'equalizer',
   'cylinders',
+  'black_hole',
 ])

@@ -27,7 +27,6 @@ const eslintConfig = [
       'no-multi-spaces': 'error',
       'no-multiple-empty-lines': ['error', { max: 1 }],
       'eol-last': ['error', 'always'],
-      
       'no-unused-vars': ['error', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
     }
     
