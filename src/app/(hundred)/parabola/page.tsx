@@ -3,7 +3,7 @@ import './style.css'
 import HundredLayout from '../hundred-layout'
 import { useEffect, useState } from 'react'
 
-export default function Horizon() {
+export default function Parabola() {
   const [points, setPoints] = useState<{ x: number, y: number }[]>([])
   const [ticks, setTicks] = useState<{ x: number[], y: number[] }>({ x: [], y: [] })
 
